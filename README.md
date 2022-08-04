@@ -5,6 +5,7 @@
 - Standard config base;
 - React plugin;
 - React Hooks plugin;
+- React Perfomance plugin;
 - JSX a11y plugin;
 - Prettier;
 
@@ -13,14 +14,14 @@
 1. Install the dependencies
 
 ```
-npm i -D eslint @seyph/eslint-config
+npm i -D eslint @seyph.com/eslint-config
 ```
 
 2. Create a `.eslintrc.json` file extending the config:
 
 ```
 {
-  "extends": "@seyph/eslint-config/react"
+  "extends": "@seyph.com/eslint-config/react"
 }
 ```
 
