@@ -7,6 +7,7 @@ module.exports = {
 	extends: [
 		'plugin:react/recommended',
 		'plugin:react-hooks/recommended',
+		'plugin:react-perf/recommended',
 		'standard',
 		'plugin:prettier/recommended'
 	],
@@ -18,7 +19,7 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module'
 	},
-	plugins: ['react', 'jsx-a11y', '@typescript-eslint'],
+	plugins: ['react', 'react-perf', 'jsx-a11y', '@typescript-eslint'],
 	rules: {
 		'prettier/prettier': [
 			'error',
