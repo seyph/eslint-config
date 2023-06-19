@@ -4,6 +4,7 @@ const react = require('./lib/react.js');
 module.exports = {
   extends: [
     'airbnb',
+    'airbnb-typescript',
     'airbnb/hooks',
     'plugin:prettier/recommended',
     'plugin:tailwindcss/recommended',
@@ -38,6 +39,12 @@ module.exports = {
   settings: {
     react: {
       version: 'detect',
+    },
+    'import/resolver': {
+      alias: {
+        map: [['src', './src']],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.d.ts'],
+      },
     },
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
