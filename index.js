@@ -39,12 +39,6 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    'import/resolver': {
-      alias: {
-        map: [['src', './src']],
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.d.ts'],
-      },
-    },
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
     },
