@@ -20,7 +20,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 'latest',
-    project: true,
+    project: ['**/tsconfig.json'],
     ecmaFeatures: {
       jsx: true,
     },
@@ -51,4 +51,5 @@ module.exports = {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
     },
   },
+  ignorePatterns: ['dist/', '.next/', 'node_modules', 'scripts', 'examples'],
 };
