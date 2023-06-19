@@ -1,6 +1,6 @@
 {
   "name": "@seyph/eslint-config",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "ESLint + Prettier config for React/NextJS",
   "main": "index.js",
   "engines": {
